@@ -1,0 +1,26 @@
+body{
+}
+
+.main{
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+#catlistview{
+	margin-right: 1em;
+}
+#cat-list{
+	font-size: 1.2em;
+}
+#cat-list li{
+	list-style: none;
+	padding: 0.1em;
+}
+
+img{
+	width: 320px;
+	height: 220px;
+	max-width: 100%;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cat Clicker</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div>
+		<h1>Click on Cat</h1>
+	</div>	
+	<div class="main">
+		<div class="cat">
+			<button id="button1"><img id="cat1" src="images/catty.jpg" alt="a cute cat"></button>
+			<br>
+			<p id="clicCount1"></p>
+		</div>	
+		<div class="cat">
+			<button id="button2"><img id="cat2" src="images/cutecat.jpg" alt="a cute cat"></button>
+			<br>
+			<p id="clicCount2"></p>
+		</div>		
+	</div>
+
+	<script type="text/javascript">
+		var countClick = function (e){
+			if (e.target.id == "cat1"){
+				output = output1;				
+			}
+			else if (e.target.id =="cat2"){
+				output = output2;
+			}				
+			if (output.textContent){
+				output.textContent= parseInt(output.textContent)+count;
+			}
+			else
+			{
+				output.textContent= count;
+			}			
+		}
+		var e1 = document.getElementById('cat1');
+		var output1 = document.getElementById('clicCount1');
+		var e2 = document.getElementById('cat2');
+		var output2 = document.getElementById('clicCount2');
+		var count = 1;
+
+		if (e1.addEventListener){
+			e1.addEventListener('click', countClick, false);
+		}
+		if (e2.addEventListener){
+			e2.addEventListener('click', countClick,false);
+		}
+	</script>
+</body>
+</html>

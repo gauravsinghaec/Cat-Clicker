@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cat Clicker</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="main.js" defer></script>
+</head>
+<body>
+	<div class="main">
+		<header>
+			<h1>Select a Cat</h1>
+		</header>
+		<div class="catlist">
+			<ul id="cat-list"></ul>			
+		</div>
+		<div class="catdisplayarea">
+			<h2 id="cat-name"></h2>
+			<p id="click-count"></p>			
+			<img id="cat-img" src="" alt="a cute cat">			
+		</div>			
+		<div class="adminarea">
+			<button id="admin-btn" class="admin">Admin</button>
+			<br>
+			<form class="admin-form">
+				<input id="form-cat-name" type="text" name="cat-name" value="">
+				<br>
+				<input id="form-img-url" type="text" name="img-url" value="">
+				<br>
+				<input id="form-click-count" type="text" name="click-count" value="">
+				<br>
+				<input id ="form-submit" type="button" name="submit" value="Save">
+				<input id ="form-cancel" type="button" name="reset" value="Cancel">
+			</form>
+		</div>					
+	</div>
+</body>
+</html>
